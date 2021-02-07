@@ -26,7 +26,9 @@ class CalculateTest : TestCase() {
         val calculate = Calculate()
         val actual = calculate.multiply(2, 3)
         val expected = 6
+        val unexpected = 5
 
         assertThat(actual).isEqualTo(expected)
+        assertThat(actual).isNotEqualTo(unexpected)
     }
 }
