@@ -1,6 +1,6 @@
 package com.example.testcode
 
-class Test {
+class Calculate {
     fun sum(x: Int, y: Int): Int {
         return x + y
     }
