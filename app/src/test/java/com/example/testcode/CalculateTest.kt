@@ -10,7 +10,14 @@ import org.assertj.core.api.Assertions.*
 
 class CalculateTest : TestCase() {
 
-    fun testSum() {}
+    @Test
+    fun testSumで足し算の結果を確かめる() {
+        val calculate = Calculate()
+        val actual = calculate.sum(2, 3)
+        val expected = 5
+
+        assertThat(actual).isEqualTo(expected)
+    }
 
     @Test
     fun testMultiplyで掛け算の結果を確かめる() {
