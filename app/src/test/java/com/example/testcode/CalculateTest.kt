@@ -15,8 +15,10 @@ class CalculateTest : TestCase() {
         val calculate = Calculate()
         val actual = calculate.sum(2, 3)
         val expected = 5
+        val unexpected = 6
 
         assertThat(actual).isEqualTo(expected)
+        assertThat(actual).isNotEqualTo(unexpected)
     }
 
     @Test
