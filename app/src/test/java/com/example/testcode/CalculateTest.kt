@@ -13,7 +13,7 @@ class CalculateTest : TestCase() {
     fun testSum() {}
 
     @Test
-    fun testMultiplyで掛け算の結果が取得できる() {
+    fun testMultiplyで掛け算の結果を確かめる() {
         val calculate = Calculate()
         val actual = calculate.multiply(2, 3)
         val expected = 6
